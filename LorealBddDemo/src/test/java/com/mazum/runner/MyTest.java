@@ -1,4 +1,4 @@
-package com.mazum;
+package com.mazum.runner;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:test.feature",
-        glue = {"classpath:com.mazum","com.mazum.hooks"},
+        features = "src/test/resources/com/mazum/features/",
+        glue = {"com.mazum.stepdefinitions","com.mazum.hooks"},
         plugin = "html:target/selenium-reports"
 )
 

@@ -1,4 +1,4 @@
-package com.mazum;
+package com.mazum.stepdefinitions;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
