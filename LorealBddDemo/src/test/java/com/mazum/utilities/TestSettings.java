@@ -32,4 +32,10 @@ public class TestSettings {
         System.out.println("LOADED CONSTANTS PROPERTIES");
         loadConstantsProperties();
     }
+
+    public Properties getConstantsProp() {
+        return constantsProp;
+    }
+
+
 }
