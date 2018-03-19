@@ -18,7 +18,7 @@ public class TestSettings {
     public void loadConstantsProperties(){
         System.out.println("LOADING CONSTANTS PROPS");
         try {
-            InputStream in = this.getClass().getClassLoader().getResourceAsStream("org/unisuper/properties/constants.properties");
+            InputStream in = this.getClass().getClassLoader().getResourceAsStream("com/mazum/properties/constants.properties");
             if(in!=null){
                 constantsProp.load(in);
             }
