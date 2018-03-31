@@ -1,6 +1,8 @@
 package com.mazum.utilities;
 
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class DriverFactory {
@@ -11,6 +13,8 @@ public class DriverFactory {
         DesiredCapabilities capabilities;
         switch (browser.toLowerCase()) {
             case "ie":
+                InternetExplorerOptions ieOptions = new InternetExplorerOptions();
+                ieOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
                 break;
             case "firefox":
                 break;
